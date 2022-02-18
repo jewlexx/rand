@@ -1,3 +1,7 @@
+use num_cpus::get as get_cpus;
+
 fn main() {
-    println!("Hello, world!");
+    let cpus = get_cpus();
+
+    let pool = threadpool::Builder::new();
 }
